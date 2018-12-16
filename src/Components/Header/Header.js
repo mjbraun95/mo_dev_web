@@ -40,19 +40,8 @@ class Header extends React.Component {
                 <Link to="/">
                     <img className="logo" alt="Mohammad Al-Ahdal" src={Logo} />
                 </Link>
-                {
-                    this.state.isMobile ?
-                        <DrawerButton onClick={() => { this.setState({ open: true }) }} />
-                        :
-                        <div className="links">
-                            <Link to="/">Home</Link>
-                            <Link to="/about">About</Link>
-                            <Link to="/portfolio">Portfolio</Link>
-                            <Link to="/photography">Photography</Link>
-                            <Link to="/contact">Contact</Link>
-                        </div>
-                }
-                <Drawer placement="right" width={"80vw"} handler={false} open={this.state.open} onMaskClick={() => { this.setState({ open: false }) }}>
+                <DrawerButton onClick={() => { this.setState({ open: true }) }} />
+                <Drawer placement="right" width={this.state.isMobile ? "80vw": "300px"} handler={false} open={this.state.open} onMaskClick={() => { this.setState({ open: false }) }}>
                     <Menu
                         style={{ height: '200%' }}
                         mode="inline"
