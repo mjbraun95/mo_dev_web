@@ -9,7 +9,7 @@ const Router = () => (
   <ReactRouter>
     <Switch>
       <Route path="/" exact component={withHeaderAndFooter(HomeScreen)} />
-      <Route path="/about" exact component={withHeaderAndFooter(AboutScreen)} />
+      {/* <Route path="/about" exact component={withHeaderAndFooter(AboutScreen)} /> */}
       <Route path="/contact" exact component={withHeaderAndFooter(ContactScreen)} />
       <Route path="/portfolio" exact component={withHeaderAndFooter(PortfolioScreen)} />
       <Route path="/photography" exact component={withHeaderAndFooter(PhotographyScreen)} />

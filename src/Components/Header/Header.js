@@ -47,7 +47,7 @@ class Header extends React.Component {
                         mode="inline"
                     >
                         <Menu.Item><Link to="/">Home</Link></Menu.Item>
-                        <Menu.Item><Link to="/about">About</Link></Menu.Item>
+                        {/* <Menu.Item><Link to="/about">About</Link></Menu.Item> */}
                         <Menu.Item><Link to="/portfolio">Portfolio</Link></Menu.Item>
                         <Menu.Item><Link to="/photography">Photography</Link></Menu.Item>
                         <Menu.Item><Link to="/contact">Contact</Link></Menu.Item>
