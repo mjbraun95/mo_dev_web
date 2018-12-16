@@ -1,4 +1,7 @@
 .header {
+    position: absolute;
+    width: 100vw;
+    flex: 0;
     padding: 40px;
     display: flex;
     flex-direction: row;

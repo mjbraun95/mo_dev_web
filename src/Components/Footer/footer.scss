@@ -2,6 +2,7 @@
     background-color: #121212;
     padding: 40px;
     color: #CCCCCC;
+    flex: 0;
     >.links {
         display: flex;
         @media screen and (max-width: 600px) {
