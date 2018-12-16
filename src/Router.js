@@ -20,7 +20,22 @@ const Router = () => (
 
 function withHeaderAndFooter(Screen) {
   return class ScreenWithHeaderAndFooter extends React.Component {
-    render() { return ([<Header key="header" />, <Screen key="screen" />, <Footer key="footer" />]) };
+    render() {
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            minHeight: "100vh"
+          }}
+        >
+          <Header key="header" />
+          <Screen key="screen" />
+          <Footer key="footer" />
+        </div>)
+        ;
+    };
   };
 }
 

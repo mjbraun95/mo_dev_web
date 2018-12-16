@@ -2,10 +2,17 @@ import React from 'react';
 import "./footer.scss"
 
 class Footer extends React.Component {
-    render(){
-        return(
+    render() {
+        return (
             <div className="footer">
-                
+                <div className="links">
+                    <a href="https://github.com/RoyalKingMomo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mohammadalahdal/">LinkedIn</a>
+                    <a href="https://www.instagram.com/mosvisuals/">Instagram</a>
+                    <a href="https://twitter.com/royalkingmomo">Twitter</a>
+                    <a href="https://trello.com/b/PCScaNu9/my-life">Trello</a>
+                </div>
+                <div className="copyrightNotice">&copy; 2018 Mohammad Al-Ahdal</div>
             </div>
         );
     }
