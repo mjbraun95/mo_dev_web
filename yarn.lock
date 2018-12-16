@@ -8317,7 +8317,7 @@ rc-dialog@~7.2.1:
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-drawer@~1.7.6:
+rc-drawer@^1.7.6, rc-drawer@~1.7.6:
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.7.6.tgz#925ce0768cf81ef5fa83eb22d90c603422b1b1b1"
   integrity sha512-FPJjShzI32ijWVjuBm+icDJHdXnKGQh/tvHJooKKspmWusCo2CAKMn1c7IG4pbVdKhZYCih70/8pD5iF5E8Bhg==

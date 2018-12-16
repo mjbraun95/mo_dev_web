@@ -20,7 +20,7 @@ const Router = () => (
 
 function withHeaderAndFooter(Screen) {
   return class ScreenWithHeaderAndFooter extends React.Component {
-    render() { return ([<Header id="header" />, <Screen id="screen" />, <Footer id="footer" />]) };
+    render() { return ([<Header key="header" />, <Screen key="screen" />, <Footer key="footer" />]) };
   };
 }
 

@@ -1,0 +1,32 @@
+.header {
+    padding: 4vh 2vw 4vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+        .logo {
+            width: 20vw;
+        }
+    }
+    @media only screen and (min-width: 600px) {
+        .logo {
+            height: 5vh;
+        }
+        .links {
+            display: flex;
+            flex-direction: row;
+            >* {
+                padding-left: 20px;
+                padding-right: 20px;
+                color: black;
+            }
+            >:last-child {
+                padding-right: 0px !important;
+            }
+            >:first-child {
+                padding-left: 0px !important;
+            }
+        }
+    }
+}

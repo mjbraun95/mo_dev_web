@@ -1,0 +1,18 @@
+.drawerButton {
+    background-color: transparent;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    img {
+        cursor: pointer;
+        transition: all 200ms 0s;
+    }
+    img:hover {
+        transition: all 200ms 0s;
+        opacity: 0.5;
+    }
+    img:active {
+        opacity: 0.3;
+    }
+}
