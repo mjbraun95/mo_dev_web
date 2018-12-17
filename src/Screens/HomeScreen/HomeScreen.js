@@ -46,7 +46,7 @@ class HomeScreen extends React.Component {
                     <h3>and a <b>Nerd</b></h3>
 
                     <p>
-                        I started coding {moment().diff(moment("20110214"), "years")} years ago when I first came to Canada from Libya. Since then, I've been working on a whole lot of different projects - cool stuff that makes me happy. My first project was to make my mom a "Happy Mother's Day" application. That soon ramped up into building robots on the <a href="https://www.firstinspires.org/robotics/frc">FRC</a> teams 4718, 4627, and Ri3D T.E.S.L.A. If you want to check out some of my more recent projects, checkout my <Link to="/portfolio">portfolio</Link>!
+                        I started coding {moment().diff(moment("20110214"), "years")} years ago when I first came to Canada from Libya. Since then, I've been working on a whole lot of different projects - cool stuff that makes me happy. My first project was to make my mom a "Happy Mother's Day" application. That soon ramped up into building robots on the <a href="https://www.firstinspires.org/robotics/frc">FRC</a> teams 4719, 4627, and Ri3D T.E.S.L.A. If you want to check out some of my more recent projects, checkout my <Link to="/portfolio">portfolio</Link>!
                     </p>
                     <p>
                         I currently study Electrical Engineering at <a href="https://uab.ca/">the University of Alberta</a> in the tradional program. I am currently set to graduate in April of 2021 after which I will be availble for full time employment in the area of Software Engineering.
