@@ -1,0 +1,24 @@
+.photographyScreen {
+    .boxContainer {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2in;
+        cursor: pointer;
+    }
+    .headerSpacing {
+        display: flex;
+        align-items: center;
+        margin-left: calc(40px + 10px + 5vh);
+        >h1{
+            height: 1.95em;
+            transform: translateY(25%);
+        }
+    }
+}

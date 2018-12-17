@@ -23,7 +23,7 @@ a:hover {
 
 .headerSpacing {
   height: calc(5vh + 80px) !important;
-  width: 1px !important;
+  width: 1px;
 }
 
 ::-webkit-scrollbar{
