@@ -55,7 +55,7 @@ class HomeScreen extends React.Component {
                         I have previously held Software Engineering positions namely a Software Consultant Intern at <a href="https://devfacto.com/">DevFacto</a>. Starting January 7<sup>th</sup>, 2019, I will be working at <a href="https://intuit.com/">Intuit</a> as a Software Development Co-Op Intern.
                     </p>
                     <p>
-                        If you have any questions or would like to tlak to me about anything, feel free to shoot me an email at <a href="mailto:mo@mothenerd.io">mo@mothenerd.io</a>!
+                        If you have any questions or would like to tlak to me about anything, feel free to shoot me an email at <a href="mailto:mohammad@mothenerd.io">mohammad@mothenerd.io</a>!
                     </p>
                 </div>
             </div>
