@@ -6,7 +6,7 @@ class Footer extends React.Component {
         return (
             <div className="footer">
                 <div className="links">
-                    <a href="https://github.com/RoyalKingMomo">GitHub</a>
+                    <a href="https://github.com/MoTheNerd">GitHub</a>
                     <a href="https://www.linkedin.com/in/mohammadalahdal/">LinkedIn</a>
                     <a href="https://www.instagram.com/mosvisuals/">Instagram</a>
                     <a href="https://twitter.com/royalkingmomo">Twitter</a>
