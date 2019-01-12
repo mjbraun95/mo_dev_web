@@ -12,13 +12,14 @@
         padding: 2in;
         cursor: pointer;
     }
-    .headerSpacing {
+    .header {
+        position: fixed;
+        z-index: -1;
         display: flex;
         align-items: center;
         margin-left: calc(40px + 10px + 5vh);
         >h1{
             height: 1.95em;
-            transform: translateY(25%);
         }
     }
 }

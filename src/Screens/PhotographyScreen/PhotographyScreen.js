@@ -19,8 +19,11 @@ class PhotographyScreen extends React.Component {
         return (
             <div className="photographyScreen">
                 <div
-                    className="headerSpacing">
+                    className="header">
                     <h1>Photography</h1>
+                </div>
+                <div
+                    className="headerSpacing">
                 </div>
                 <Gallery onClick={(e, obj) => { this.setState({ photo: { ...obj.photo, index: obj.index }, box: true }) }} photos={PHOTO_SET} />
                 {
