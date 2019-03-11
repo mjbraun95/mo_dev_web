@@ -7,7 +7,7 @@ class ContactScreen extends React.Component {
             <div className="contactScreen">
                 <h1>So, you want to get in touch...</h1>
                 <h3>there's a few ways you can get a hold of me.</h3>
-                <div>Email: <a href="mailto:mohammad@mothenerd.io">mohammad@mothenerd.io</a></div>
+                <div>Email: <a href="mailto:mo@mohammad.dev">mo@mohammad.dev</a></div>
                 <br />
                 <div>Phone: <a href="tel:15874366543">+1 (587) 436-6543</a></div>
                 <br />

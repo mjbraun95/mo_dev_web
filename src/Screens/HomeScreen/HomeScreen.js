@@ -52,10 +52,10 @@ class HomeScreen extends React.Component {
                         I currently study Electrical Engineering at <a href="https://uab.ca/">the University of Alberta</a> in the tradional program. I am currently set to graduate in April of 2021 after which I will be availble for full time employment in the area of Software Engineering.
                     </p>
                     <p>
-                        I have previously held Software Engineering positions namely a Software Consultant Intern at <a href="https://devfacto.com/">DevFacto</a>. Starting January 7<sup>th</sup>, 2019, I will be working at <a href="https://intuit.com/">Intuit</a> as a Software Development Co-Op Intern.
+                        I have previously held Software Engineering positions namely a Software Consultant Intern at <a href="https://devfacto.com/">DevFacto</a>. I am currently working at <a href="https://intuit.com/">Intuit</a> as a Software Development Co-Op Intern.
                     </p>
                     <p>
-                        If you have any questions or would like to tlak to me about anything, feel free to shoot me an email at <a href="mailto:mohammad@mothenerd.io">mohammad@mothenerd.io</a>!
+                        If you have any questions or would like to talk to me about anything, feel free to shoot me an email at <a href="mailto:mo@mohammad.dev">mo@mohammad.dev</a>!
                     </p>
                 </div>
             </div>

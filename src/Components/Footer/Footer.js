@@ -12,7 +12,7 @@ class Footer extends React.Component {
                     <a href="https://twitter.com/royalkingmomo">Twitter</a>
                     <a href="https://trello.com/b/PCScaNu9/my-life">Trello</a>
                 </div>
-                <div className="copyrightNotice">&copy; 2018 Mohammad Al-Ahdal</div>
+                <div className="copyrightNotice">Mohammad Al-Ahdal</div>
             </div>
         );
     }
