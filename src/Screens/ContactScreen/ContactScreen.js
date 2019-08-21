@@ -13,11 +13,11 @@ class ContactScreen extends React.Component {
                 <br />
                 <div><a href="https://www.linkedin.com/in/mohammadalahdal/">LinkedIn</a></div>
                 <br />
-                <div><a href="https://twitter.com/RoyalKingMomo">Twitter</a></div>
+                <div><a href="https://twitter.com/itsmomo_dev">Twitter</a></div>
                 <br />
-                <div><a href="https://instagram.com/mosvisuals">Instagram</a></div>
+                <div><a href="https://instagram.com/its_momos">Instagram</a></div>
                 <br />
-                <div><a href="m.me/enggmo">Messenger</a></div>
+                <div><a href="https://m.me/mohammad.nerd">Messenger</a></div>
 
             </div>
         );
