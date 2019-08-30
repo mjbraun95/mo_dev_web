@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@mo_dev/bits'
 
 import './portfolioScreen.scss'
 class PortfolioScreen extends React.Component {
@@ -9,6 +10,7 @@ class PortfolioScreen extends React.Component {
                 <div className="tmp_reconstruction">
                     <h1>This page is under reconstruction</h1>
                     <h6>(I'm making an api that would be able to store my portfolio to a database and -- you get the idea)</h6>
+                    <Link />
                 </div>
             </div>
         );
