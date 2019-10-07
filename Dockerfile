@@ -11,4 +11,4 @@ RUN yarn build
 RUN cd /usr/share/mo_dev_web/build
 RUN yarn global add serve
 
-CMD ["serve", "-s", "-l", "5002", "."]
+CMD ["serve", "-s", "-l", "5002", "./build"]
