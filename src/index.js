@@ -2,6 +2,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './Router';
 import * as serviceWorker from './serviceWorker';
+import { Store } from 'litsy'
+
+new Store({
+    storeName: "mo_dev_web",
+    persist: true
+})
+
+new Store({
+    storeName: "mo_dev_web",
+    persist: false
+})
 
 ReactDOM.render(Router(), document.getElementById('root'));
 
