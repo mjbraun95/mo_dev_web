@@ -6,8 +6,8 @@ WORKDIR /usr/share/mo_dev_web
 EXPOSE 5002
 COPY . /usr/share/mo_dev_web
 RUN cd /usr/share/mo_dev_web
+RUN yarn
 RUN yarn build
-COPY ./build /usr/share/mo_dev_web/build
 RUN cd /usr/share/mo_dev_web/build
 RUN yarn global add serve
 
