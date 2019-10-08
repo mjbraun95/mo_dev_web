@@ -23,5 +23,23 @@
         .dashboardScreen__photographySection, .dashboardScreen__portfolioSection {
             margin-top: 1in;
         }
+
+        .dashboardScreen__photographySection__imageCarousel{
+            display: flex;
+            flex-direction: row;
+            max-width: calc(100vw - 2in);
+            overflow: scroll;
+            .dashboardScreen__photographySection__imageCarousel__image{
+                width: 250px;
+                height: 250px;
+                margin-bottom: 0.1in;
+                transition: all 250ms 0ms ease-in-out;
+
+                &:hover {
+                    width: 275px;
+                    height: 275px;
+                }
+            }
+        }
     }
 }

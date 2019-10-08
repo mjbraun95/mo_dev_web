@@ -53,7 +53,28 @@ export class DashboardScreen extends Component {
     return (
       <div className="dashboardScreen__photographySection">
         <h2>Photos:</h2>
-        {photography_posts.map(value => <div>{JSON.stringify(value)}</div>)}
+        <div className="dashboardScreen__photographySection__imageCarousel">
+          {photography_posts.map((value, index, arr) => (
+            <div style={{
+              cursor: "pointer",
+              marginLeft: index === 0 ? 0 : "20px",
+              marginRight: index === arr.length - 1 ? 0 : "20px",
+              textAlign: 'center'
+            }} onClick={() => {
+              // copy _id to pasteboard
+              navigator.clipboard.writeText(value._id)
+            }}>
+              <div className="dashboardScreen__photographySection__imageCarousel__image" style={{
+                background: `url("${value.url}") 50% 50% no-repeat`,
+                backgroundSize: "100%"
+              }}>
+              </div>
+              {value._id}
+            </div>
+          ))}
+        </div>
+        <h2>Add a photo:</h2>
+        <h2>Delete a photo:</h2>
       </div>
     )
   }
