@@ -1,0 +1,17 @@
+.dashboardScreen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    .dashboardScreen__authenticatedDashboardView {
+        height: 100vh;
+        width: 100vw;
+        padding: 1in;
+
+        .dashboardScreen__photographySection, .dashboardScreen__portfolioSection {
+            margin-top: 1in;
+        }
+    }
+}
