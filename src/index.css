@@ -26,6 +26,11 @@ a:hover {
   width: 1px;
 }
 
+.headerSpacingLess{
+  height: 0.5in !important;
+  width: 1px;
+}
+
 ::-webkit-scrollbar{
   display: none;
 }

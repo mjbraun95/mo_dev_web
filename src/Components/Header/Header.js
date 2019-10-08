@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
+import { getStore } from 'litsy';
 import Drawer from 'rc-drawer';
 import 'rc-drawer/assets/index.css'
 import 'antd/dist/antd.css'
@@ -41,7 +42,7 @@ class Header extends React.Component {
                     <img className="logo" alt="Mohammad Al-Ahdal" src={Logo} />
                 </Link>
                 <DrawerButton onClick={() => { this.setState({ open: true }) }} />
-                <Drawer placement="right" width={this.state.isMobile ? "80vw": "300px"} handler={false} open={this.state.open} onMaskClick={() => { this.setState({ open: false }) }}>
+                <Drawer placement="right" width={this.state.isMobile ? "80vw" : "300px"} handler={false} open={this.state.open} onMaskClick={() => { this.setState({ open: false }) }}>
                     <Menu
                         style={{ height: '200%' }}
                         mode="inline"
@@ -51,6 +52,12 @@ class Header extends React.Component {
                         <Menu.Item><Link to="/portfolio">Portfolio</Link></Menu.Item>
                         <Menu.Item><Link to="/photography">Photography</Link></Menu.Item>
                         <Menu.Item><Link to="/contact">Contact</Link></Menu.Item>
+                        {
+                            getStore("mo_dev_web", true).getState("auth__tokenStatus") &&
+                                getStore("mo_dev_web", true).getState("auth__tokenStatus").code === 200 ?
+                                <Menu.Item><Link to="/dashboard">Dashboard</Link></Menu.Item> :
+                                <Menu.Item><Link to="/login">Login</Link></Menu.Item>
+                        }
                     </Menu>
                 </Drawer>
             </div>

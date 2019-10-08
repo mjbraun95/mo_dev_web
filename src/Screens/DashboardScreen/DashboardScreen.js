@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { LoadingIndicator, ButtonGroup, Button } from '@mo_dev/bits'
+import { LoadingIndicator, ButtonGroup, Button, TextField } from '@mo_dev/bits'
 import { createAPICall, getStore } from 'litsy'
 
 import './dashboardScreen.scss'
+import { Header } from '../../Components'
 
 export class DashboardScreen extends Component {
 
@@ -18,6 +19,9 @@ export class DashboardScreen extends Component {
   render() {
     return (
       <div className="dashboardScreen">
+        <div style={{ position: "absolute", top: 0, left: 0 }}>
+          <Header />
+        </div>
         {this.state.showable ? this.renderAuthenticatedDashboard() : <LoadingIndicator />}
       </div>
     )
@@ -26,6 +30,7 @@ export class DashboardScreen extends Component {
   renderAuthenticatedDashboard() {
     return (
       <div className="dashboardScreen__authenticatedDashboardView">
+        <div className="headerSpacingLess"></div>
         <div className="dashboardScreen__header">
           <h1>
             Welcome, Mohammad
@@ -52,8 +57,8 @@ export class DashboardScreen extends Component {
 
     return (
       <div className="dashboardScreen__photographySection">
-        <h2>Photos:</h2>
         <div className="dashboardScreen__photographySection__imageCarousel">
+          <h2>Photos:</h2>
           {photography_posts.map((value, index, arr) => (
             <div style={{
               cursor: "pointer",
@@ -73,8 +78,23 @@ export class DashboardScreen extends Component {
             </div>
           ))}
         </div>
-        <h2>Add a photo:</h2>
-        <h2>Delete a photo:</h2>
+        <div className="dashboardScreen__photographySection__addPhoto">
+          <h2>Add a photo:</h2>
+          <Button type="wire" onClick={() => {
+            // do stuff
+          }}>
+            Upload
+          </Button>
+        </div>
+        <div className="dashboardScreen__photographySection__deletePhoto">
+          <h2>Delete a photo:</h2>
+          <TextField placeholder="enter image id" />
+          <Button type="wire" onClick={() => {
+            // do stuff
+          }}>
+            Delete
+          </Button>
+        </div>
       </div>
     )
   }
@@ -101,7 +121,7 @@ export class DashboardScreen extends Component {
 
     const checkToken = createAPICall({
       // url: '/api/auth/authenticateUsingToken',
-      url: 'https://mohammad.dev/api/auth/authenticateUsingToken',
+      url: '/api/auth/authenticateUsingToken',
       method: 'post',
       storeName: "mo_dev_web",
       stateName: "auth__tokenStatus",
@@ -127,7 +147,7 @@ export class DashboardScreen extends Component {
 
   async getPhotographyPosts() {
     const getPhotos = createAPICall({
-      url: 'https://mohammad.dev/api/photography/photos',
+      url: '/api/photography/photos',
       method: 'get',
       storeName: "mo_dev_web",
       stateName: "photography__posts",
@@ -140,7 +160,7 @@ export class DashboardScreen extends Component {
 
   async getPortfolioPosts() {
     const getPosts = createAPICall({
-      url: 'https://mohammad.dev/api/portfolio/posts',
+      url: '/api/portfolio/posts',
       method: 'get',
       storeName: "mo_dev_web",
       stateName: "portfolio__posts",
@@ -149,10 +169,6 @@ export class DashboardScreen extends Component {
     getStore("mo_dev_web", false).subscribe("portfolio__posts", "DashboardScreen", () => { this.forceUpdate.bind(this)() })
 
     await getPosts()
-  }
-
-  signOut() {
-
   }
 
   uploadNewPhotographyPost() {

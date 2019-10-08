@@ -3,6 +3,7 @@ import { TextField, LoadingIndicator, Button } from '@mo_dev/bits'
 import { createAPICall, getStore } from 'litsy'
 
 import './loginScreen.scss'
+import { Header } from '../../Components'
 
 export class LoginScreen extends Component {
 
@@ -18,6 +19,9 @@ export class LoginScreen extends Component {
   render() {
     return (
       <div className="loginScreen">
+        <div style={{ position: "absolute", top: 0, left: 0 }}>
+          <Header />
+        </div>
         {
           !getStore("mo_dev_web", true).getState("auth") ||
             (getStore("mo_dev_web", true).getState("auth") &&

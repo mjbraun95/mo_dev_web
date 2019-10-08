@@ -76,6 +76,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "https://mohammad.dev",
   "browserslist": [
     ">0.2%",
     "not dead",
