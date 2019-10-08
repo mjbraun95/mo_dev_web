@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.0",
-    "@mo_dev/bits": "^0.0.4",
+    "@mo_dev/bits": "^0.0.7",
     "@svgr/webpack": "2.4.1",
     "antd": "^3.11.2",
     "babel-core": "7.0.0-bridge.0",
@@ -34,7 +34,7 @@
     "jest": "24.0.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
-    "litsy": "^0.2.0",
+    "litsy": "^0.3.0",
     "mini-css-extract-plugin": "0.4.3",
     "moment": "^2.23.0",
     "node-sass": "^4.11.0",
@@ -76,6 +76,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "https://mohammad.dev",
   "browserslist": [
     ">0.2%",
     "not dead",

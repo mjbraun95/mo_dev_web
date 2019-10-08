@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter as ReactRouter, Switch, Route } from 'react-router-dom';
 
-import { ContactScreen, HomeScreen, PhotographyScreen, PortfolioScreen, Error404 } from './Screens'
+import { ContactScreen, HomeScreen, PhotographyScreen, PortfolioScreen, Error404, LoginScreen, DashboardScreen } from './Screens'
 import { Header, Footer } from './Components'
 
 const Router = () => (
@@ -12,6 +12,8 @@ const Router = () => (
       <Route path="/contact" exact component={withHeaderAndFooter(ContactScreen)} />
       <Route path="/portfolio" exact component={withHeaderAndFooter(PortfolioScreen)} />
       <Route path="/photography" exact component={withHeaderAndFooter(PhotographyScreen)} />
+      <Route path="/login" exact component={LoginScreen} />
+      <Route path="/dashboard" exact component={DashboardScreen} />
       <Route component={Error404} />
     </Switch>
   </ReactRouter>

@@ -1,0 +1,69 @@
+.dashboardScreen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    .dashboardScreen__authenticatedDashboardView {
+        height: 100vh;
+        width: 100vw;
+        padding: 1in;
+
+        .dashboardScreen__header {
+            margin-bottom: 0.5in;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            >h1{
+                margin-bottom: 9px;
+            }
+        }
+
+        .dashboardScreen__photographySection, .dashboardScreen__portfolioSection {
+            margin-top: 1in;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .dashboardScreen__photographySection__imageCarousel{
+            display: flex;
+            flex-direction: row;
+            max-width: calc(100vw - 2in);
+            overflow: scroll;
+            >h2 {
+                position: fixed;
+            }
+            .dashboardScreen__photographySection__imageCarousel__image{
+                width: 250px;
+                height: 250px;
+                margin-bottom: 0.1in;
+                transition: all 250ms 0ms ease-in-out;
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        .dashboardScreen__photographySection__addPhoto{
+            display: inline-flex;
+            flex-direction: column;
+            >:first-child {
+                margin-top: 0.25in;
+            }
+        }
+        .dashboardScreen__photographySection__deletePhoto{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            >:first-child {
+                margin-top: 0.25in;
+            }
+            >:nth-child(2){
+                margin-bottom: 0.5in;
+            }
+        }
+    }
+}
