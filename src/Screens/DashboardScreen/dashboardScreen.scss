@@ -10,6 +10,16 @@
         width: 100vw;
         padding: 1in;
 
+        .dashboardScreen__header {
+            margin-bottom: 0.5in;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            >h1{
+                margin-bottom: 9px;
+            }
+        }
+
         .dashboardScreen__photographySection, .dashboardScreen__portfolioSection {
             margin-top: 1in;
         }

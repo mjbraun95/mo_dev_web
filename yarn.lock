@@ -1146,10 +1146,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@mo_dev/bits@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@mo_dev/bits/-/bits-0.0.6.tgz#f8a97287854e834903bb43894ecdd4901e55a31f"
-  integrity sha512-A0cndbe21aWP1YjRer/HF9wKJ8d+Sh2h6tsL8S8jKIEU5XXDsZo/MoW+JZI3tlUDzzU2JBF6Q+Tjjm70E/AbOA==
+"@mo_dev/bits@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@mo_dev/bits/-/bits-0.0.7.tgz#f4abd750f88584b8ffb2671bc3df67a100eed983"
+  integrity sha512-WEKYCl3Ht79H1X71nfU8eotVrd7QWXUi/xlO3raFiREST0CIWGxx2tSrbOvoNmMAy0Vxpp5AzIhOLbgHOhjfsw==
   dependencies:
     "@types/node" "^12.7.2"
     "@types/react" "^16.9.2"
