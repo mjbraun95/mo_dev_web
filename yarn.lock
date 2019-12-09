@@ -6992,10 +6992,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-litsy@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/litsy/-/litsy-0.3.1.tgz#bc55a7e1369a7029f1c9b43483a8290a97059100"
-  integrity sha512-1thWb04ZRtieLHRnmQfpmIhlmr9oykbA/MkTWy+t298If0xYusnOeVhYh/Q8aUMRfia59tkpUB6EUETneanEhQ==
+litsy@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/litsy/-/litsy-0.3.2.tgz#1da8c15ae0eacee44c5729267b49c58fc1dffa76"
+  integrity sha512-Nfr7MhiouEyrJ+6knhedfUtuSgqVKMdho9sN3DzJCQtLZQJygstX9FFcMZu0mOO7c90xJBAtitqxUjufRqqDbA==
   dependencies:
     "@types/axios" "^0.14.0"
     axios "^0.19.0"
