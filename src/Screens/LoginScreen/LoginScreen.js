@@ -56,7 +56,7 @@ export class LoginScreen extends Component {
   validatePassword() {
     const checkPass = createAPICall({
       // url: '/api/auth/authenticate',
-      url: 'https://mohammad.dev/api/auth/authenticate',
+      url: 'https://api.mohammad.dev/auth/authenticate',
       method: 'post',
       storeName: "mo_dev_web",
       stateName: "auth",
@@ -87,7 +87,7 @@ export class LoginScreen extends Component {
 
     const checkToken = createAPICall({
       // url: '/api/auth/authenticateUsingToken',
-      url: 'https://mohammad.dev/api/auth/authenticateUsingToken',
+      url: 'https://api.mohammad.dev/auth/authenticateUsingToken',
       method: 'post',
       storeName: "mo_dev_web",
       stateName: "auth__tokenStatus",

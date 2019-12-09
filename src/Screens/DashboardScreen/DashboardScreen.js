@@ -121,7 +121,7 @@ export class DashboardScreen extends Component {
 
     const checkToken = createAPICall({
       // url: '/api/auth/authenticateUsingToken',
-      url: '/api/auth/authenticateUsingToken',
+      url: 'https://api.mohammad.dev/auth/authenticateUsingToken',
       method: 'post',
       storeName: "mo_dev_web",
       stateName: "auth__tokenStatus",
@@ -147,7 +147,7 @@ export class DashboardScreen extends Component {
 
   async getPhotographyPosts() {
     const getPhotos = createAPICall({
-      url: '/api/photography/photos',
+      url: 'https://api.mohammad.dev/photography/photos',
       method: 'get',
       storeName: "mo_dev_web",
       stateName: "photography__posts",
@@ -160,7 +160,7 @@ export class DashboardScreen extends Component {
 
   async getPortfolioPosts() {
     const getPosts = createAPICall({
-      url: '/api/portfolio/posts',
+      url: 'https://api.mohammad.dev/portfolio/posts',
       method: 'get',
       storeName: "mo_dev_web",
       stateName: "portfolio__posts",

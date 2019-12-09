@@ -28,7 +28,7 @@ class PortfolioScreen extends React.Component {
 
     componentDidMount() {
         this.getPosts = createAPICall({
-            url: '/api/portfolio/posts',
+            url: 'https://api.mohammad.dev/portfolio/posts',
             // url: 'http://slowwly.robertomurray.co.uk/delay/10000/url/https://mohammad.dev/api/portfolio/posts',
             // use the above URL to test animation
             method: 'get',
