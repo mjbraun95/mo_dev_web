@@ -43,7 +43,7 @@ export class HomeScreen extends React.Component<HomeScreenProps, HomeScreenState
     window.addEventListener('scroll', this.listenForScroll.bind(this))
     window.addEventListener('resize', this.listenForResize.bind(this))
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.listenForScroll.bind(this));
     window.removeEventListener('resize', this.listenForResize.bind(this))
@@ -98,6 +98,7 @@ export class HomeScreen extends React.Component<HomeScreenProps, HomeScreenState
         </PhotoWallDiv>
 
         <ContentDiv>
+          <MomoImage />
           <InfoCard style={{
             width: this.state.screenWidth >= 1440 ? "50%" : "100%",
             padding: this.state.screenWidth >= 1440 ? "0.5in" : "0.1in",
@@ -130,9 +131,35 @@ const ContentDiv = styled.div`
   position: relative;
   margin-top: 100vh;
   display: flex;
+  flex-direction: row-reverse;
+  @media screen and (max-width: 1800px) {
+    flex-direction: column;
+  }
   justify-content: center;
   align-items: center;
   z-index: 5;
+`
+
+const MomoImage = styled.div`
+  position: relative;
+  height: 550px;
+  width: 350px;
+  @media screen and (max-width: 1800px) {
+    display: none;
+  }
+  ::after {
+    border-radius: 0.25in;
+    box-shadow: 0px 0px 20px 0px #000000FF;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: url("https://modev.sfo2.digitaloceanspaces.com/website-content/DSC09020-2.jpg") center 0%;
+    background-size: cover;
+    z-index: -1;
+  }
 `
 
 const HomeScreenContainerDiv = styled.div`
