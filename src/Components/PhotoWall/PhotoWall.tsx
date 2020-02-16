@@ -44,11 +44,11 @@ export class PhotoWall extends React.Component<PhotoWallProps> {
         {
           fakeData.map((row, rowIndex) => {
             return (
-              <ImageRow>
+              <ImageRow key={rowIndex}>
                 {
                   row.map((item, itemIndex) => {
                     return (
-                      <ImageItem show={this.props.isShown} indexDelay={rowIndex + itemIndex} gridWidth={item.gridWidth} src={item.src} />
+                      <ImageItem key={itemIndex} show={this.props.isShown} indexDelay={rowIndex + itemIndex} gridWidth={item.gridWidth} src={item.src} />
                     )
                   })
                 }
