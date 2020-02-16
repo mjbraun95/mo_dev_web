@@ -26,6 +26,8 @@ export class Footer extends React.Component {
 }
 
 const FooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
   padding: 10px;
   width: 100vw;
