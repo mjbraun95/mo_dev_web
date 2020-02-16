@@ -30,7 +30,7 @@ const FooterContainer = styled.div`
   flex-direction: column;
   background-color: #000000;
   padding: 10px;
-  width: 100vw;
+  width: auto;
 `
 
 const FooterSection = styled.div`

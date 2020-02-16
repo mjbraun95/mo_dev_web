@@ -28,6 +28,8 @@ export class InfoCard extends React.Component<InfoCardProps, InfoCardState> {
 }
 
 const InfoCardStyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
   width: ${(props: InfoCardProps) => props.style && props.style.width !== undefined ? typeof props.style.width === "number" ? `${props.style.width}px` : props.style.width : "auto"};
   height: ${(props: InfoCardProps) => props.style && props.style.height !== undefined ? typeof props.style.height === "number" ? `${props.style.height}px` : props.style.height : "auto"};
   padding: ${(props: InfoCardProps) => props.style && props.style.padding !== undefined ? typeof props.style.padding === "number" ? `${props.style.padding}px` : props.style.padding : "0.5in"};

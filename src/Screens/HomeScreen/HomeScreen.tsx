@@ -100,14 +100,14 @@ export class HomeScreen extends React.Component<HomeScreenProps, HomeScreenState
         <ContentDiv>
           <MomoImage />
           <InfoCard style={{
-            width: this.state.screenWidth >= 1440 ? "50%" : "100%",
-            padding: this.state.screenWidth >= 1440 ? "0.5in" : "0.1in",
+            width: this.state.screenWidth >= 1440 ? "50vw" : "auto",
+            padding: this.state.screenWidth >= 1440 ? "0.5in" : "0.2in",
             margin: this.state.screenWidth >= 1440 ? "0.5in" : "0px",
             disableDecor: this.state.screenWidth >= 1440 ? false : true
           }}>
             {
               `
-## Hey! My name is Mohammad Al-Ahdal.
+# Hey! My name is Mohammad Al-Ahdal.
 
 I'm a software developer located in [Edmonton, AB, Canada](https://www.google.com/maps/place/Edmonton,+AB). I'm a largely self-taught software developer who started coding at the age of 13. I studied Electrical Engineering at the [University of Alberta](https://uab.ca) until my fourth year in the program where I decided to start on my software development journey in a professional manner.
 
@@ -132,8 +132,8 @@ const ContentDiv = styled.div`
   margin-top: 100vh;
   display: flex;
   flex-direction: row-reverse;
-  @media screen and (max-width: 1800px) {
-    flex-direction: column;
+  @media screen and (max-width: 1440px) {
+    display: flexbox;
   }
   justify-content: center;
   align-items: center;
@@ -144,7 +144,8 @@ const MomoImage = styled.div`
   position: relative;
   height: 550px;
   width: 350px;
-  @media screen and (max-width: 1800px) {
+  margin: 0.5in 0in;
+  @media screen and (max-width: 1440px) {
     display: none;
   }
   ::after {
