@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { HomeScreen, Error404Screen } from './Screens';
-import { NavBar, NavPanel } from './Components';
+import { NavBar, NavPanel, Footer } from './Components';
 
 function Router() {
   return (
@@ -12,6 +12,7 @@ function Router() {
         <Route path="/" exact component={HomeScreen} />
         <Route component={Error404Screen} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
