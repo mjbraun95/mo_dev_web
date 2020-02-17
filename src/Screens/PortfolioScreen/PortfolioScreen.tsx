@@ -27,7 +27,7 @@ export class PortfolioScreen extends React.Component {
       <PortfolioScreenContainer>
         {
           fakeData.map(
-            (data, index) => <PortfolioItem imgUrl={data.imgUrl} direction={index % 2 == 0 ? "right" : "left"} markdown={data.markdown} />
+            (data, index) => <PortfolioItem imgUrl={data.imgUrl} direction={index % 2 === 0 ? "right" : "left"} markdown={data.markdown} />
           )
         }
       </PortfolioScreenContainer>
