@@ -29,7 +29,14 @@ const PortfolioItemContainer = styled.div`
   margin-top: 0.4in;
   margin-bottom: 0.4in;
   width: 100%;
-  flex-direction: ${(props: PortfolioItemProps) => props.direction === "right" ? "row" : "row-reverse"};
+  flex-direction: ${
+  (props: PortfolioItemProps) =>
+    window.innerWidth <= 700 ? 
+    "column" :
+      props.direction === "right" ?
+        "row" :
+        "row-reverse"
+  };
 `
 
 const PortfolioItemImage = styled.div`
