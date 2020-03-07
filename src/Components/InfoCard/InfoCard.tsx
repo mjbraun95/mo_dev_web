@@ -33,7 +33,6 @@ const InfoCardStyledDiv = styled.div`
   width: ${(props: InfoCardProps) => props.style && props.style.width !== undefined ? typeof props.style.width === "number" ? `${props.style.width}px` : props.style.width : "auto"};
   height: ${(props: InfoCardProps) => props.style && props.style.height !== undefined ? typeof props.style.height === "number" ? `${props.style.height}px` : props.style.height : "auto"};
   padding: ${(props: InfoCardProps) => props.style && props.style.padding !== undefined ? typeof props.style.padding === "number" ? `${props.style.padding}px` : props.style.padding : "0.5in"};
-  border-radius: ${(props: InfoCardProps) => props.style && props.style.disableDecor ? "none" : "0.25in"};
   background-color: black;
   margin: ${(props: InfoCardProps) => props.style && props.style.margin !== undefined ? typeof props.style.margin === "number" ? `${props.style.margin}px` : props.style.margin : "0.5in"};
 

@@ -149,7 +149,6 @@ const MomoImage = styled.div`
     display: none;
   }
   ::after {
-    border-radius: 0.25in;
     box-shadow: 0px 0px 20px 0px #000000FF;
     content: "";
     position: absolute;
