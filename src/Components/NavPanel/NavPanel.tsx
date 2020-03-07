@@ -7,7 +7,6 @@ import backsvg from '../../assets/back-button.svg'
 const navItems = [
   { to: "/", title: "Home" },
   { to: "/portfolio", title: "Portfolio" },
-  { to: "/photography", title: "Photography" },
   { to: "/contact", title: "Contact" },
   { to: `/login`, title: `Login` },
 ];
